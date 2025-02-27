@@ -1,0 +1,120 @@
+{
+    "data": [
+        {
+            "status": {
+                "status": "verified",
+                "verify-date": "verify-date"
+            },
+            "submitted": "submitted",
+            "date": "date",
+
+            "times": {
+                "primary_t": 0
+            },
+
+            "players": {
+                "data": [
+                    {
+                        "id": "id",
+                        "names": {
+                            "international": "user"
+                        },
+
+                        "weblink": "weblink",
+                        "twitch": null,
+                        "hitbox": null,
+                        "youtube": {
+                            "uri": "youtube"
+                        },
+                        "twitter": null,
+                        "speedrunslive": null,
+
+                        "links": [
+                            {
+                                "rel": "self",
+                                "uri": "run1userselflink"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "status": {
+                "status": "verified",
+                "verify-date": "verify-date"
+            },
+            "submitted": null,
+            "date": "date",
+
+            "times": {
+                "primary_t": 0
+            },
+
+            "players": {
+                "data": [
+                    {
+                        "name": "guest1",
+                        "links": [
+                            {
+                                "rel": "self",
+                                "uri": "run2guestselflink"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "status": {
+                "status": "verified",
+                "verify-date": "verify-date"
+            },
+            "submitted": null,
+            "date": null,
+
+            "times": {
+                "primary_t": 0
+            },
+
+            "players": {
+                "data": [
+                    {
+                        "name": "guest2",
+                        "links": [
+                            {
+                                "rel": "self",
+                                "uri": "run3guestselflink"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "status": {
+                "status": "new"
+            },
+            "submitted": null,
+            "date": null,
+
+            "times": {
+                "primary_t": 0
+            },
+
+            "players": {
+                "data": [
+                    {
+                        "name": "guest3",
+                        "links": [
+                            {
+                                "rel": "self",
+                                "uri": "run4guestselflink"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress XmlUnresolvedReference; The "Users" class is not yet implemented. -->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="463.0" prefWidth="457.0" stylesheets="@../styles/bootstrap3.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsu.cs.application.playerprofile.PlayerProfileController">
+   <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" prefHeight="53.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-image-width: 5;" text="User Profile" textAlignment="CENTER">
+      <font>
+         <Font size="32.0" />
+      </font>
+      <graphic>
+      </graphic>
+   </Label>
+   <Separator prefHeight="9.0" prefWidth="512.0" style="-fx-background-color: black;" />
+   <HBox prefHeight="50.0" prefWidth="500.0" style="-fx-border-color: black;">
+      <VBox prefHeight="48.0" prefWidth="98.0">
+         <Label prefHeight="31.0" prefWidth="161.0" text="Name:" underline="true" />
+         <Label fx:id="userNameDisplayLabel" prefHeight="17.0" prefWidth="150.0" text="nameLabel">
+            <padding>
+               <Insets left="10.0" />
+            </padding></Label>
+      </VBox>
+      <VBox prefHeight="48.0" prefWidth="86.0">
+         <Label prefHeight="72.0" prefWidth="46.0" text="Type:" underline="true" />
+         <Label fx:id="typeDisplayLabel" prefHeight="17.0" prefWidth="155.0" text="typeLabel">
+            <padding>
+               <Insets left="10.0" />
+            </padding></Label>
+      </VBox>
+      <VBox prefHeight="48.0" prefWidth="271.0">
+         <Label prefHeight="70.0" prefWidth="75.0" text="Web link:" underline="true" />
+         <Hyperlink fx:id="weblinkHyperlink" onAction="#openLinkAction" prefHeight="17.0" prefWidth="272.0" text="WeblinkLabel">
+            <padding>
+               <Insets left="10.0" />
+            </padding></Hyperlink>
+      </VBox>
+   </HBox>
+   <Separator prefHeight="10.0" prefWidth="512.0" style="-fx-background-color: black;" />
+   <HBox prefHeight="336.0" prefWidth="457.0">
+      <VBox prefHeight="295.0" prefWidth="457.0" style="-fx-border-color: black;">
+         <Label alignment="CENTER" prefHeight="25.0" prefWidth="456.0" text="Socials" underline="true">
+            <font>
+               <Font size="19.0" />
+            </font></Label>
+         <Label text="Twitch:" underline="true">
+            <padding>
+               <Insets left="30.0" />
+            </padding></Label>
+         <Hyperlink fx:id="twitchHyperlink" onAction="#openLinkAction" prefHeight="47.0" prefWidth="454.0" text="TwitchLabel">
+            <padding>
+               <Insets left="45.0" />
+            </padding></Hyperlink>
+         <Label text="YouTube:" underline="true">
+            <padding>
+               <Insets left="30.0" />
+            </padding></Label>
+         <Hyperlink fx:id="youtubeHyperlink" onAction="#openLinkAction" prefHeight="43.0" prefWidth="454.0" text="YoutubeLabel">
+            <padding>
+               <Insets left="45.0" />
+            </padding></Hyperlink>
+         <Label text="Twitter:" underline="true">
+            <padding>
+               <Insets left="30.0" />
+            </padding></Label>
+         <Hyperlink fx:id="twitterHyperlink" onAction="#openLinkAction" prefHeight="47.0" prefWidth="454.0" text="TwitterLabel">
+            <padding>
+               <Insets left="45.0" />
+            </padding></Hyperlink>
+         <Label text="Speed Runs Live:" underline="true">
+            <padding>
+               <Insets left="30.0" />
+            </padding></Label>
+         <Hyperlink fx:id="speedrunsLiveHyperlink" onAction="#openLinkAction" prefHeight="43.0" prefWidth="456.0" text="SpeedrunsliveLabel">
+            <padding>
+               <Insets left="45.0" />
+            </padding></Hyperlink>
+         <Label text="HitBox:" underline="true">
+            <padding>
+               <Insets left="30.0" />
+            </padding></Label>
+         <Hyperlink fx:id="hitBoxHyperlink" onAction="#openLinkAction" prefHeight="42.0" prefWidth="458.0" text="HitBoxLabel">
+            <padding>
+               <Insets left="45.0" />
+            </padding></Hyperlink>
+      </VBox>
+   </HBox>
+</VBox>

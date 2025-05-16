@@ -1,11 +1,14 @@
+import org.openjfx.gradle.JavaFXPlatform
+
 plugins {
     id("java")
     id("application")
     id("org.openjfx.javafxplugin") version "0.1.0"
+    id("org.beryx.runtime") version "1.13.1"
 }
 
 group = "edu.bsu.cs"
-version = "v0.3.0"
+version = "0.3.0"
 
 repositories {
     mavenCentral()
@@ -34,9 +37,16 @@ tasks.test {
 
 application {
     mainClass.set("edu.bsu.cs.application.SpeedrunStatsApplication")
+    applicationName = "liveboard"
 }
 
 javafx {
     version = "22"
     modules("javafx.controls", "javafx.fxml")
+}
+
+runtime {
+    imageDir.set(project.file("${project.buildDir}/image"))
+    options.set(listOf("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages"))
+    modules.set(listOf("java.desktop", "jdk.unsupported", "java.scripting", "java.logging", "java.xml"))
 }
